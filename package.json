@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.7.0",
+    "parcel": "^2.7.0",
+    "parcel-transformer-hbs": "^1.0.4"
+  },
+  "scripts": {
+    "dev": "parcel index/index.html",
+    "build": "parcel build index.html"
+  }
+}

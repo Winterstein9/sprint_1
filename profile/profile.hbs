@@ -1,0 +1,75 @@
+<style>
+        html, body{height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+        *{box-sizing:border-box}
+
+        body{background-color:#1c1c1c; 
+        display: flex; align-items: center; justify-content: center; flex-direction:column;}
+
+       .div__data__user{display:flex; flex-direction:column; align-items: center;
+        padding: 20px 0; width: 300px; background-color:#343434;
+        display:flex; justify-content: center; border-radius: 10px;}
+
+       .login__form{flex-direction:column;}
+
+       .data__user__div + .data__user__div{margin-top: 25px;}
+
+       .password__div{margin-top: 15px;}
+
+       .data__user__buttons{width:180px; background-color:#343434; color:silver;
+        border:none; border-bottom:2px solid #51b5c5; text-align: center; font-size: 20px; outline:none;}
+
+       .sign__in__div{margin-top: 30px;}
+       .sign__in__link{color:#51b5c5; font-size: 18px;}
+
+       .sign__in__button{width:180px; padding:0px; font-size:18px; margin-top:20px; 
+        background-color:#51b5c5; border:none; color:#343434;}
+
+        .change__data__buttons{width:180px; padding: 0px; font-size: 18px; margin-top: 20px; 
+        background-color: #51b5c5;; border: none; color:#343434;}
+
+        .div__user__avatar{margin-bottom:10px; width:100px; 
+       height:100px; border-radius: 10px; display: flex; background-color:#343434;}
+
+       .img__user__avatar{height: 100px; width: 100px; border-radius: 50%; 
+       text-align: center;  line-height: 6em; color:silver;}
+    </style>
+    {{>index}}
+    <div class="div__data__user">
+
+            <div class="data__user__div">
+                <input type="email" class="data__user__buttons" placeholder="email" name="email" value="pochta@yandex.ru">
+            </div>
+
+            <div class="data__user__div">
+                <input type="text" class="data__user__buttons" placeholder="login" name="login" value="Will">
+            </div>
+
+            <div class="data__user__div">
+                <input type="text" class="data__user__buttons" placeholder="first name" name="first_name" value="William">
+            </div>
+
+            <div class="data__user__div">
+                <input type="text" class="data__user__buttons" placeholder="second name" name="second_name" value="Holmes">
+            </div>
+
+            <div class="data__user__div">
+                <input type="text" class="data__user__buttons" placeholder="phone" name="phone" value="+79110000007">
+            </div>
+
+            <div class="data__user__div">
+                <input type="password" class="data__user__buttons" placeholder="phone" name="phone" value="4123">
+            </div>
+
+            <div class="sign__in__div">
+                <input type="submit" class="change__data__buttons" name="phone" value="change data">
+            </div>
+
+             <div class="sign__in__div">
+                <a class="sign__in__link" href="/change_img.hbs">изменить изображение</a>
+            </div>
+
+            <div class="sign__in__div">
+                <a class="sign__in__link" href="/index.hbs">выйти</a>
+            </div>
+    </div>
