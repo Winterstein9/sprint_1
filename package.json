@@ -8,6 +8,6 @@
   },
   "scripts": {
     "dev": "parcel index/index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index/index.html"
   }
 }
