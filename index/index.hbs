@@ -1,46 +1,26 @@
-    <style>
-        body{background-color:#1c1c1c; display:flex; align-items:center; justify-content:center;}
-
-        .sign__in__div{padding:30px 0; width:300px; background-color:#343434;
-            display:flex; justify-content:center; border-radius:10px;}
-
-        .sign__in__form{display:flex; flex-direction:column; align-items:center;}
-
-        .password__div{margin-top:25px;}
-
-        .sign__in__login, .sign__in__password{width:180px; background-color:#343434; 
-        border:none; border-bottom:2px dashed #51b5c5; text-align: center; font-size: 20px; 
-        outline:none; color:silver;}
-
-        .sign__up__div{margin-top:30px;}
-       .sign__up__link{color:#51b5c5; font-size:18px;}
-
-       .navigation{position:absolute; top:10px; left:10px;}
-       .navigation a{text-decoration:underline; cursor: pointer;}
-    </style>
-
-    <div class="navigation">
-    <a style="color:#51b5c5;" id="error500">500</a>
-    <a style="color:#51b5c5;" id="error404">404</a>
-    <a style="color:#51b5c5;" id="chat_list">chat list</a>
-    <a style="color:#51b5c5;" id="chat">chat</a>
-    <a style="color:#51b5c5;" id="sign_up">sign up</a>
-    <a style="color:#51b5c5;" id="profile">profile</a>
+    <main class="index__main">
+    <div class="in__div__navigation">
+        <a id="error500">500</a>
+        <a id="error404">404</a>
+        <a id="chat_list">chat list</a>
+        <a id="chat">chat</a>
+        <a id="sign_up">sign up</a>
+        <a id="profile">profile</a>
     </div>
 
-    <div class="sign__in__div">
-        <form class="sign__in__form">
-            <div class="login__div">
-                <input type="text" class="sign__in__login" placeholder="login" name="login">
+    <div class="in__div__sign__in">
+        <form class="in__form__sign__in">
+            <div class="in__div__login">
+                <input type="text" class="in__login" placeholder="login" name="login">
             </div>
-            <div class="password__div">
-                <input type="password" class="sign__in__password" placeholder="password" name="password">
+            <div class="in__div__password">
+                <input type="password" class="in__password" placeholder="password" name="password">
             </div>
-            <div class="div__sign__in__button">
- 
+            <div class="in__div__button__sign__in">
             </div>
-            <div class="sign__up__div">
-                <a class="sign__up__link" href="/sign_up.hbs">Sign up</a>
+            <div class="in__div__sign__up">
+                <a class="in__link__sign__up" href="/sign_up.hbs">Sign up</a>
             </div>
         </form>
     </div>
+</main>

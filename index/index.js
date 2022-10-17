@@ -1,5 +1,6 @@
 import Handlebars from "handlebars"
 import './style.styl';
+import "./index.styl"
 import index from "./index.hbs"
 import butSignIn from "/components/button/button.js"
 
@@ -7,7 +8,7 @@ Handlebars.registerPartial('index',`<a href="/index.html" class="index">index</a
 
 
 document.body.innerHTML=index()
-document.querySelector(".div__sign__in__button").innerHTML=butSignIn("Sign in","Sign in")
+document.querySelector(".in__div__button__sign__in").innerHTML=butSignIn("butSignIn","Sign in")
 
 import sign_up from "/sign_up/sign_up"
 document.querySelector("#sign_up").addEventListener("click",()=>{
