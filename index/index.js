@@ -1,5 +1,5 @@
 import Handlebars from "handlebars"
-import "./style.css"
+import './style.styl';
 import index from "./index.hbs"
 import butSignIn from "/components/button/button.js"
 
