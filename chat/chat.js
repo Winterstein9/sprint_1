@@ -1,15 +1,18 @@
-import chat from "./chat.hbs"
-import chat_list from "./chat_list.hbs"
+import chathbs from "./chat.hbs"
+import chat_listhbs from "./chat_list.hbs"
 import {users} from "./dataChat.js"
 import "./chat_list.styl"
 import "./chat.styl"
 
-export let chat=()=>{
-    document.body.innerHTML=chat({users:users})
+const chat=()=>{
+    document.body.innerHTML=chathbs({users:users})
     document.querySelector("#title").textContent="chat"
 }
 
-export let chat_list=()=>{
-    document.body.innerHTML=chat_list({users:users})
+const chat_list=()=>{
+    document.body.innerHTML=chat_listhbs({users:users})
     document.querySelector("#title").textContent="chat_list"
 }
+
+
+export {chat, chat_list}
