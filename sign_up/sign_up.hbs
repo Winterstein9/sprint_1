@@ -1,56 +1,34 @@
-    <style>
-        body{background-color:#1c1c1c; display:flex; align-items: center; justify-content: center;}
-
-       .sign__up__div{padding: 20px 0; width: 300px; background-color:#343434;
-        display:flex; justify-content: center; border-radius: 10px;}
-
-       .sign__up__form{display:flex; flex-direction:column; align-items: center;}
-
-       .login__form{flex-direction:column;}
-
-       .data__user__div + .data__user__div{margin-top: 25px;}
-
-       .password__div{margin-top: 15px;}
-
-       .data__user__buttons{width:180px; background-color:#343434; color:silver;
-        border:none; border-bottom:2px dashed #51b5c5; text-align: center; font-size: 20px; outline:none;}
-
-       .sign__in__button{width:180px; padding: 0px; font-size: 18px; margin-top: 20px; 
-       background-color: #51b5c5;; border: none; color:#343434;}
-
-    .sign__in__div{margin-top: 30px;}
-       .sign__in__link{color:#51b5c5; font-size: 18px;}
-    </style>
 {{>index}}
-    <div class="sign__up__div">
+<main class="sign__up__main">
+    <div class="si__sign__up__div">
 
-        <form class="sign__up__form">
+        <form class="si__sign__up__form">
 
-            <div class="data__user__div">
-                <input type="email" class="data__user__buttons" placeholder="email" name="email">
+            <div class="si__data__user__div">
+                <input type="email" class="si__data__user__buttons" placeholder="email" name="email">
             </div>
 
-            <div class="data__user__div">
-                <input type="text" class="data__user__buttons" placeholder="first name" name="first_name">
+            <div class="si__data__user__div">
+                <input type="text" class="si__data__user__buttons" placeholder="first name" name="first_name">
             </div>
 
-            <div class="data__user__div">
-                <input type="text" class="data__user__buttons" placeholder="second name" name="second_name">
+            <div class="si__data__user__div">
+                <input type="text" class="si__data__user__buttons" placeholder="second name" name="second_name">
             </div>
 
-            <div class="data__user__div">
-                <input type="text" class="data__user__buttons" placeholder="phone" name="phone">
+            <div class="si__data__user__div">
+                <input type="text" class="si__data__user__buttons" placeholder="phone" name="phone">
             </div>
 
-            <div class="data__user__div">
-                <input type="password" class="data__user__buttons" placeholder="password" name="password">
+            <div class="si__data__user__div">
+                <input type="password" class="si__data__user__buttons" placeholder="password" name="password">
             </div>
-            
-            <input type="submit" class="sign__in__button" value="Sign up">
+        
+            <input type="submit" class="si__sign__in__button" value="Sign up">
 
-            <div class="sign__in__div">
-                <a class="sign__in__link" href="/index.hbs">Sign in</a>
+            <div class="si__sign__in__div">
+                <a class="si__sign__in__link" href="/index.hbs">Sign in</a>
             </div>
-
         </form>
     </div>
+    </main>
