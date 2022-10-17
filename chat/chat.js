@@ -1,7 +1,8 @@
 import chat from "./chat.hbs"
 import chat_list from "./chat_list.hbs"
 import {users} from "./dataChat.js"
-import "./chat.css"
+import "./chat_list.styl"
+import "./chat.styl"
 
 export let chat=()=>{
     document.body.innerHTML=chat({users:users})
