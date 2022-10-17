@@ -1,10 +1,9 @@
 {{>index}}
 <main class="chat__main">
 <div class="ch__users_list">
-    <div class="ch__div__profile">
-        <a href="/index.hbs">index</a>
+    <nav class="ch__div__profile">
         <a href="/profile.hbs">profile</a>
-    </div>
+    </nav>
     {{#each users}}
         {{#if this.active}}
         <div class="ch__contact_with_user ch__active__contact__user">
