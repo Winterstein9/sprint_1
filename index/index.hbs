@@ -4,22 +4,22 @@
         .sign__in__div{padding:30px 0; width:300px; background-color:#343434;
             display:flex; justify-content:center; border-radius:10px;}
 
-            .sign__in__form{display:flex; flex-direction:column; align-items:center;}
+        .sign__in__form{display:flex; flex-direction:column; align-items:center;}
 
-                .password__div{margin-top:25px;}
+        .password__div{margin-top:25px;}
 
-                .sign__in__login, .sign__in__password{width:180px; background-color:#343434; 
+        .sign__in__login, .sign__in__password{width:180px; background-color:#343434; 
         border:none; border-bottom:2px dashed #51b5c5; text-align: center; font-size: 20px; 
         outline:none; color:silver;}
 
-       /*.sign__in__button{width:180px; padding:0px; font-size:18px; margin-top:20px; 
-        background-color:#51b5c5; border:none; color:#343434;}*/
-
-    .sign__up__div{margin-top:30px;}
+        .sign__up__div{margin-top:30px;}
        .sign__up__link{color:#51b5c5; font-size:18px;}
+
+       .navigation{position:absolute; top:10px; left:10px;}
+       .navigation a{text-decoration:underline; cursor: pointer;}
     </style>
 
-    <div style="position:absolute; top:10px; left:10px;">
+    <div class="navigation">
     <a style="color:#51b5c5;" id="error500">500</a>
     <a style="color:#51b5c5;" id="error404">404</a>
     <a style="color:#51b5c5;" id="chat_list">chat list</a>
@@ -37,7 +37,7 @@
                 <input type="password" class="sign__in__password" placeholder="password" name="password">
             </div>
             <div class="div__sign__in__button">
-                <!--input type="submit" class="sign__in__button" value="Sign in"-->
+ 
             </div>
             <div class="sign__up__div">
                 <a class="sign__up__link" href="/sign_up.hbs">Sign up</a>
