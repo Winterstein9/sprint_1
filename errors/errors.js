@@ -1,7 +1,6 @@
-import "./errors.css"
+import "./errors.styl"
 import error404 from "./404.hbs"
 import error500 from "./500.hbs"
-
 
 export const error404=()=>{
     document.body.innerHTML=error404()
