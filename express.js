@@ -8,3 +8,5 @@ app.use(express.static(`${__dirname}/dist/`));
 app.listen(PORT, () => {
     console.log(`Мой порт: ${PORT}!`);
 });
+
+//тест
